@@ -2,7 +2,6 @@ var num = parseInt(window.prompt('1~100の数字を入力'));
 
 while(num > 100 || num < 1)
 {
-  if(num > 100 || num < 1)
     num = parseInt(window.prompt('1~100の数字を入力'));
 }
 

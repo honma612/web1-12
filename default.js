@@ -6,20 +6,20 @@ while(num > 100 && num < 1)
     num = parseInt(window.prompt('1~100の数字を入力'));
 }
 
-for(var i = 1; i < num; i++)
+for(var i = 0; i < num; i++)
 {
   var li = document.createElement('li');
-  if(i / 3 != 0 && i / 5 != 0)
+  if((i + 1) % 3 != 0 && (i + 1) % 5 != 0)
   {
     li.textContent = i;
     document.getElementById('choice').appendChild(li);
   }
-  else if(i / 5 == 0)
+  else if((i + 1) % 5 == 0)
   {
     li.textContent = 'Fizz';
     document.getElementById('choice').appendChild(li);
   }
-  else if(i / 3 == 0)
+  else if((i + 1) % 3 == 0)
   {
     li.textContent = 'Buzz';
     document.getElementById('choice').appendChild(li);
